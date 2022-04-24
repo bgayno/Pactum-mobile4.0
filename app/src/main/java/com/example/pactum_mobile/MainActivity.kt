@@ -2,6 +2,10 @@ package com.example.pactum_mobile
 
 import android.os.Bundle
 import android.view.Menu
+import android.view.View
+import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
 import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.navigation.NavigationView
 import androidx.navigation.findNavController
@@ -54,4 +58,23 @@ class MainActivity : AppCompatActivity() {
         val navController = findNavController(R.id.nav_host_fragment_content_main)
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
+
+
+    fun onNewVote(view: View){
+        navigate(R.id.)
+
+    }
+
+
 }
+
+
+class User(id: Int, fName: String, lName: String, userVoteID: Int){
+
+}
+
+class Candidate(canID: Int, canName: String, canVotes: Int, canPlace: Int){
+
+}
+
+class Vote(numOfUsers: Int, numOfCans: Int, isOpen: Boolean, winnerID: Int)

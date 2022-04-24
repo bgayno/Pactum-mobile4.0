@@ -27,11 +27,10 @@
     <TextView
         android:id="@+id/textView2"
         android:layout_width="499dp"
-        android:layout_height="83dp"
-        android:layout_marginStart="77dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="29dp"
-        android:layout_marginEnd="77dp"
-        android:layout_marginBottom="244dp"
+        android:layout_marginEnd="1dp"
         android:autoSizeMaxTextSize="@android:dimen/thumbnail_height"
         android:background="#06B886"
         android:fontFamily="casual"
@@ -43,19 +42,18 @@
         android:textStyle="bold"
         android:typeface="normal"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/text_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.093" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="64dp"
         android:layout_height="45dp"
         android:layout_marginStart="77dp"
-        android:layout_marginTop="388dp"
+        android:layout_marginTop="31dp"
         android:layout_marginEnd="77dp"
+        android:layout_marginBottom="31dp"
         android:autoSizeMaxTextSize="@android:dimen/thumbnail_height"
         android:background="#FFFFFF"
         android:fontFamily="casual"
@@ -67,13 +65,14 @@
         android:textStyle="bold"
         android:typeface="normal"
         android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/startNewVote" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/startNewVote"
         android:layout_width="375dp"
         android:layout_height="121dp"
         android:layout_marginStart="159dp"
@@ -83,15 +82,16 @@
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:onClick="onNewVote"/>
 
     <Button
         android:id="@+id/button2"
         android:layout_width="375dp"
         android:layout_height="121dp"
-        android:layout_marginStart="159dp"
+        android:layout_marginStart="1dp"
         android:layout_marginTop="300dp"
-        android:layout_marginEnd="159dp"
+        android:layout_marginEnd="1dp"
         android:text="Join A Vote"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
