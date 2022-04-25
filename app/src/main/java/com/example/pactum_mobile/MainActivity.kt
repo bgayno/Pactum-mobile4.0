@@ -59,11 +59,21 @@ class MainActivity : AppCompatActivity() {
         return navController.navigateUp(appBarConfiguration) || super.onSupportNavigateUp()
     }
 
+    /*
+    val btnClickMe = findViewById<Button>(R.id.startNewVote)
+    val myTextView = findViewById<TextView>(R.id.textView)
+    var timesClicked = 0
+    btnClickMe.setOnClickListener {
+        timesClicked += 1
+        myTextView.text = timesClicked.toString()
+        Toast.makeText(this@MainActivity, "Penis", Toast.LENGTH_SHORT).show()
 
     fun onNewVote(view: View){
         navigate(R.id.)
 
     }
+    
+     */
 
 
 }
